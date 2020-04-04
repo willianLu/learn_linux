@@ -26,15 +26,22 @@ export default {
   components: { AsideBox },
   data() {
     return {
-      width: 298
+      width: 298,
+      isMini: false
     };
+  },
+  created() {
+    this.isMini = document.body.clientWidth < 768;
+    if (this.isMini) {
+      this.width = 0;
+    }
   },
   methods: {
     handleAsideShow() {
       if (this.width > 0) {
         this.width = 0;
       } else {
-        this.width = 298;
+        this.width = this.isMini ? 200 : 298;
       }
     }
   }
