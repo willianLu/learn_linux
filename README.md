@@ -1,24 +1,17 @@
 # linux
 
-## Project setup
+## 项目-安装
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 本地开发命令
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 生产打包命令
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
